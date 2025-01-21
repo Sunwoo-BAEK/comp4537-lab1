@@ -113,6 +113,14 @@ function main() {
     }
     app.renderNotes();
     app.updateTimeDisplay
+
+    // Listen for changes from writer.html
+    window.addEventListener("storage", (event) => {
+        if (event.key === "notes") {
+            app.notes = app.loadNotes();  // Reload notes
+            app.renderNotes();
+        }
+    });
 }
 
 function wordify() {

@@ -2,15 +2,18 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title id="write-title"></title>
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body class="center-container">
         <h1 id="write-header"></h1>
         <p id="write-time" class="timestamp"></p>
-        <div id="notes-container"></div>
-        <button id="add-note"></button>
-        <button class="back" onclick="location.href='index.html'"></button>
+        <div id="notes-container" class="notes-grid"></div>
+        <div class="button-group">
+            <button id="add-note"></button>
+            <button class="back" onclick="location.href='index.html'"></button>
+        </div>
         <script src="lang/messages/en/user.js"></script>
         <script src="js/script.js"></script>
     </body>

@@ -1,4 +1,86 @@
-.main-container p {
-    font-size: 25px;
-    border: solid 1px;
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Centers content vertically & horizontally */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Timestamp Styling */
+.timestamp {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Notes Container */
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+/* Individual Note */
+.notes-grid div {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Textarea Styling */
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
 }
