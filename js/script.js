@@ -40,7 +40,7 @@ class NoteApp {
     loadNotes() {
         const storedNotes = localStorage.getItem("notes");
         const parsedNotes = storedNotes ? JSON.parse(storedNotes) : [];
-        return parsedNotes.map(note => new Note(note.id, note.content)); // explain mapping
+        return parsedNotes.map(note => new Note(note.id, note.content));
     }
 
     addNote() {
@@ -101,6 +101,7 @@ class NoteApp {
                         button.style.display = "none";
                 }
             });
+            this.updateTimeDisplay();
         }
     }
 }
